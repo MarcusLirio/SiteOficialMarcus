@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Vídeo de Fundo</title>
+</head>
+
+<body>
+    <div class="video-container" id="home">
+        <video autoplay loop muted>
+            <source
+                src="https://f8n-production-collection-assets.imgix.net/0x173f564274Af0A12392A60c1eFb0BB4c9199E8c3/pre_reveal/nft.gif?q=50&max-w=640&fm=mp4"
+                type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="secondary-video menu-item">
+            <video autoplay loop muted>
+                <source src="./assets/AdobeStock_274245536.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div>
+    <div class="header">
+        <h1>"Todo sonho tem um caminho. Deixe-me ser o seu!"</h1>
+    </div>
+    <div class="menu">
+        <h1 class="menu-item">Home</h1>
+        <ul>
+            <li class="menu-item">
+                <a href="#home" class="btn">Início</a>
+            </li>
+            <li class="menu-item">
+                <a href="#about" class="btn">Sobre</a>
+            </li>
+            <li class="menu-item">
+                <a href="#contact" class="btn">Contato</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="title menu-item">
+        <h1>PROJETOS TRABALHADOS</h1>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <img class="images" src="./assets/mimilon.png" alt="">
+            <h1></h1>
+        </div>
+        <div class="card">
+            <img class="images" src="./assets/grupoTv1.png" alt="">
+            <img class="logos" src="https://www.grupotv1.com.br/images/logo.png" alt="">
+        </div>
+        <div class="card">
+            <img class="images" src="./assets/mimilon.png" alt="">
+            <img class="logos" src="https://mimilon.com/wp-content/uploads/2023/04/logo-Azul-fundo-transparente-1.png"
+                alt="">
+        </div>
+        <div class="card">
+            <img class="images" src="./assets/lubbri.png" alt="">
+            <img class="logos"
+                src="https://omegacotech.com.br/_next/image?url=%2Fimages%2Flogo-omegaco-completa-branca.png&w=640&q=75"
+                alt="">
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="img-container">
+            <img class="img-m" src="https://marcuslirio.github.io/SiteOficialMarcus/assets/Marcus-portifolio.jpeg"
+                alt="">
+        </div>
+        <div class="card-about">
+            <h1 id="typing-text">
+            </h1>
+            <div class="typing-cursor"></div>
+        </div>
+    </div>
+
+    <section class="section-5" id="service">
+        <div class="marquee">
+            <ul class="marquee-content">
+                <li>
+                    <i class="fab fa-gitlab">
+                    </i>
+                </li>
+                <li>
+                    <i class="fab fa-aws"></i>
+                </li>
+                <li>
+                    <i class="fab fa-docker"></i>
+                </li>
+                <li>
+                    <i class="fab fa-android"></i>
+                </li>
+                <li>
+                    <i class="fab fa-java"></i>
+                </li>
+                <li>
+                    <i class="fab fa-angular"></i>
+                </li>
+                <li>
+                    <i class="fab fa-react"></i>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="form-container" id="contact">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="email">Digite seu email para contato</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                <button onclick="Enviar()" class="btn">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="overlay">
+        <div id="alertBox">
+            <p id="alertMessage">Muito Obrigado!! <br> Entrarei em contato o mais breve possivel.</p>
+            <button id="closeButton" class="btn-light" onclick="closeAlert()">Fechar</button>
+        </div>
+    </div>
+
+    <div class="floating-buttons">
+        <a href="#home" id="scrollToTopButton">
+            <button><i class="fa fa-arrow-alt-circle-up"></i></button>
+        </a>
+        <!-- Botão do WhatsApp -->
+        <a href="https://wa.me/5511998387433" target="_blank">
+            <button><i class="fab fa-whatsapp"></i></button>
+        </a>
+
+        <a href="https://www.instagram.com/marcuskks" target="_blank">
+            <button><i class="fab fa-instagram"></i></button>
+        </a>
+
+        <a href="https://www.linkedin.com/in/marcus-vinicius-lirio-da-cruz-a61ab8202" target="_blank">
+            <button><i class="fab fa-linkedin"></i></button>
+        </a>
+
+        <button id="audioToggle" onclick="toggleAudio()">
+            <i id="audioIcon" class="fa fa-volume-up"></i>
+        </button>
+    </div>
+
+    <audio id="myAudio" autoplay>
+        <source src="./assets/audio.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
